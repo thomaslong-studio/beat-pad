@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Beat Pad</title>
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="beat-pad">
+        <div class="drums">
+          <div data-key="81" onclick="whenClicked()" class="pad hit">
+            <kbd>Q</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="87" class="pad hit">
+            <kbd>W</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="69" class="pad hit">
+            <kbd>E</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="65" class="pad hit">
+            <kbd>A</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="83" class="pad hit">
+            <kbd>S</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="68" class="pad hit">
+            <kbd>D</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="90" class="pad hit">
+            <kbd>Z</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="88" class="pad hit">
+            <kbd>X</kbd>
+            <span class="sound"></span>
+          </div>
+          <div data-key="67" class="pad hit">
+            <kbd>C</kbd>
+            <span class="sound"></span>
+          </div>
+        </div>
+        <div data-key="32" class="sample hit">
+          <kbd>Space</kbd>
+          <span class="sound"></span>
+        </div>
+      </div>
+
+      <audio data-key="81" src="sounds/cl_hihat.mp3"></audio>
+      <audio data-key="87" src="sounds/cowbell.mp3"></audio>
+      <audio data-key="69" src="sounds/crashcym.mp3"></audio>
+      <audio data-key="65" src="sounds/handclap.mp3"></audio>
+      <audio data-key="83" src="sounds/maracas.mp3"></audio>
+      <audio data-key="68" src="sounds/open_hh.mp3"></audio>
+      <audio data-key="90" src="sounds/snare.mp3"></audio>
+      <audio data-key="88" src="sounds/kick2.mp3"></audio>
+      <audio data-key="67" src="sounds/tom1.mp3"></audio>
+      <audio
+        class="melody"
+        data-key="32"
+        src="sounds/140_happy-ballad-piano-chords-8ths.wav"
+      ></audio>
+    </div>
+  </body>
+</html>
